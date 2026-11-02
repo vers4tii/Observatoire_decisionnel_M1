@@ -1,0 +1,34 @@
+# Provenance des données — une entrée par source.
+# Le pipeline télécharge chaque `url` dans data/raw/<fichier>.
+# Remplissez tous les champs : la data card et le rapport s'appuient dessus.
+
+sources:
+  - id: source_1
+    nom: "[Nom du jeu de données]"
+    producteur: "[Organisme producteur]"
+    page: "https://www.data.gouv.fr/fr/datasets/[slug]/"   # page de présentation
+    url: ""                                                  # lien direct vers le fichier (CSV, XLSX, JSON…)
+    fichier: source_1.csv                                    # nom du fichier dans data/raw/
+    format: csv
+    separateur: ";"
+    encodage: utf-8
+    licence: "[ex. : Licence Ouverte 2.0]"
+    date_acces: "AAAA-MM-JJ"
+    maille: "[commune | département | établissement | …]"
+    periode: "[AAAA–AAAA]"
+    cle_jointure: "[ex. : code_commune]"
+
+  - id: source_2
+    nom: "[Nom du jeu de données]"
+    producteur: "[Organisme producteur]"
+    page: ""
+    url: ""
+    fichier: source_2.csv
+    format: csv
+    separateur: ";"
+    encodage: utf-8
+    licence: ""
+    date_acces: "AAAA-MM-JJ"
+    maille: ""
+    periode: ""
+    cle_jointure: ""
